@@ -22,6 +22,7 @@ function newPost(response){
 }
 function failure(error){
     console.error(error);
+    console.log("Something went wrong");
 }
 
 let editBtn = document.getElementById('editor');
