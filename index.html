@@ -9,6 +9,17 @@
     <script src="js/app.js" defer></script>
 </head>
 <body>
-    
+    <h1>Create A post for the page</h1>
+    <form action="javascript:void(0)" method="POST">
+        <label for="form">title</label>
+        <input id="userTitle" type="text">
+        <label for="form">Post</label>
+        <input id="userPost" type="text">
+        <input type="submit" id= "send" value="post">
+        <input type="submit" id= "editor" value="edit">
+        <input type="submit" id= "deleted" value="delete">
+        <h3 id = "successM"></h3>
+    </form>
+    <div id="container"></div>
 </body>
 </html>
