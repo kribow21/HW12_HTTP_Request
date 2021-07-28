@@ -83,9 +83,15 @@ function postAll(response){
     titleInput = document.getElementById('userTitle').value;
 
 for (let i =0; i < response.data.length; i++){
+    let parentElement = document.getElementById('container');
+    let newID = document.createElement('p');
+    newID.innerHTML = response.data[i].userId;
+    parentElement.appendChild(newID);
+    let newPTitle = document.createElement('p');
+    newPTitle.innerHTML = response.data[i].title;
+    parentElement.appendChild(newPTitle);
     let newElement = document.createElement('p')
     newElement.innerHTML = response.data[i].body;
-    let parentElement = document.getElementById('container');
     parentElement.append(newElement);
 }
 }
